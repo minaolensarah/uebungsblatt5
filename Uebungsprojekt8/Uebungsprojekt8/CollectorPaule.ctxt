@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=CollectorPaule
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ PainterPaule\ here.\r\n\r\n\ @author\ \ Sarah\ Breckner\r\n\ \ \ \ \ \ \ \ \ \ 3425446\r\n\ \ \ \ \ \ \ \ \ \ st163632@stud.uni-stuttgart.de\r\n\r\n\ @author\ \ Kim\ Lingemann\r\n\ \ \ \ \ \ \ \ \ \ 3380756\r\n\ \ \ \ \ \ \ \ \ \ st160814@stud.uni-stuttgart.de\r\n\r\n\ @version\ 5\r\n
+comment1.params=
+comment1.target=CollectorPaule()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ PainterPaule\r\n
+comment2.params=numberOfSteps
+comment2.target=void\ multiMove(int)
+comment3.params=
+comment3.target=void\ collectAll()
+comment3.text=\r\n\ Paule\ collects\ ten\ grains\r\n\ \r\n\ Paule\ picks\ up\ ten\ grains\ from\ his\ current\ tile\r\n\ \r\n\ @requires\ \ \ \ TEN\ GRAINS\r\n\ @ensures\ \\old.paule.getGrainCount\ \=\ paule.getGrainCount\ -\ 10\r\n
+comment4.params=
+comment4.target=void\ collectAllGrains()
+comment4.text=\r\n\ Paule\ collects\ all\ grains\r\n\ \r\n\ Paule\ picks\ up\ all\ grains\ from\ his\ current\ tile\r\n\ \r\n\ @requires\ \ \ \ paule.isInitialised()\r\n\ @ensures\ \\old.paule.getGrainCount\ \=\ paule.getGrainCount\ -\ GRAINS\ ON\ THE\ TILE\r\n
+comment5.params=
+comment5.target=void\ test1()
+comment5.text=\r\n\ test\ of\ collectAll\ with\ a\ runtime\ exeption\ thrown\ because\ of\ to\ few\ grains\r\n
+comment6.params=
+comment6.target=void\ test2()
+comment6.text=\r\n\ test\ of\ collectAll,\ no\ exeptions\ thrown\ but\ paule\ only\ partially\ picks\ the\ grains\r\n\ \r\n\ @requires\ \ \ \ paule.isInitialised()\r\n\ @ensures\ \\old.paule.getGrainCount\ \=\ paule.getGrainCount\ -\ 10\r\n
+comment7.params=
+comment7.target=void\ test3()
+comment7.text=\r\n\ test\ of\ collectAll,\ no\ exeptions\ thrown\ and\ paule\ picks\ all\ the\ grains\ on\ his\ tile\r\n\ \r\n\ @requires\ \ \ \ paule.isInitialised()\r\n\ @ensures\ \\old.paule.getGrainCount\ \=\ paule.getGrainCount\ -\ 10\r\n
+comment8.params=
+comment8.target=void\ test4()
+comment8.text=\r\n\ test\ of\ collectAllGrains\r\n\ \r\n\ Paule\ picks\ all\ the\ grains\ in\ the\ territory\r\n\ \r\n\ @requires\ \ \ \ paule.isInitialised()\r\n\ @ensures\ \\old.paule.getGrainCount\ \=\ paule.getGrainCount\ -\ territory.getGrainCount\r\n
+numComments=9

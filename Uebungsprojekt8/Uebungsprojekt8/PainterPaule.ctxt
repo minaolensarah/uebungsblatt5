@@ -1,0 +1,46 @@
+#BlueJ class context
+comment0.target=PainterPaule
+comment0.text=\r\n\ Paule\ paints\ the\ numbers\ from\ 0\ to\ 7\ in\ binary\ digits.\r\n\r\n\ @author\ \ Sarah\ Breckner\r\n\ \ \ \ \ \ \ \ \ \ 3425446\r\n\ \ \ \ \ \ \ \ \ \ st163632@stud.uni-stuttgart.de\r\n\r\n\ @author\ \ Kim\ Lingemann\r\n\ \ \ \ \ \ \ \ \ \ 3380756\r\n\ \ \ \ \ \ \ \ \ \ st160814@stud.uni-stuttgart.de\r\n\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=PainterPaule()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ PainterPaule\r\n
+comment10.params=
+comment10.target=void\ testPaintingOne()
+comment10.text=\r\n\ Tests\ the\ painting\ of\ number\ one\ ("001")\ after\ implementing\ correctly\:\r\n\ initialPosition()\ -\ which\ puts\ paule\ in\ the\ first\ position\ ready\ to\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ paint\ a\ digit\r\n\ paintZero()\ -\ paints\ the\ digit\ 0\r\n\ paintOne()\ -\ paints\ the\ digit\ \r\n\ space()\ -\ space\ after\ a\ digit\ one\ or\ zero\ put\ paule\ to\ ready\ position\r\n\ \ \ \ \ \ \ \ \ \ \ for\ the\ next\ digit\r\n
+comment11.params=number
+comment11.target=java.lang.String\ integerToBinary(int)
+comment11.text=\r\n\ Converts\ a\ decimal\ number\ to\ a\ binary\ number\r\n\ \r\n\ @param\ \ \ number,\ integer\ to\ be\ converted\ to\ binary\ representation\r\n\ @return\ \ binary\ representation\ of\ number\r\n
+comment12.params=
+comment12.target=void\ askNumber()
+comment12.text=\r\n\ Asks\ the\ user\ which\ number\ he\ wants\ Paule\ to\ convert\ into\ binary\ representation\ and\ converts\ it\r\n
+comment13.params=number
+comment13.target=java.lang.String\ umrechnen(int)
+comment13.text=\r\n\ returns\ the\ binary\ representation\ of\ an\ integer\r\n\ \r\n\ @param\ \ \ number,\ integer\ to\ be\ converted\ to\ binary\ number\r\n\ @return\ \ binary,\ binary\ representation\ of\ the\ given\ Integer\r\n\ @requires\ \ number\ has\ to\ be\ an\ Integer\r\n\ @ensures\ binary\ representation\ of\ Integer\r\n
+comment14.params=
+comment14.target=void\ paintDigit()
+comment14.text=\r\n\ Paule\ paints\ a\ number\ choosen\ by\ the\ user\r\n\ \r\n\ The\ user\ chooses\ a\ number\ from\ 0\ to\ 7\ and\ Paule\ converts\ it\ to\ binary\ representation.\ After\ that\ he\ paints\ it\ through\ placing\ grains\ in\ the\ territory\r\n\ \r\n\ @requires\ \ \ \ the\ user's\ input\ has\ to\ be\ an\ integer\r\n\ @requires\ \ \ \ paule.getGrainCount\ >\=\ 324\r\n\ @requires\ \ \ \ paule.getDirection\ \=\ Direction.EAST\r\n\ @requires\ \ \ \ no\ walls\ in\ the\ territory\r\n\ @ensures\ \ \ \ \ \\old\ paule.getGrainCount()\ >\ paule.getGrainCount\ \r\n\ @ensures\ \ \ \ \ Paule\ painted\ a\ binary\ number\ \ \ \r\n\ @ensures\ \ \ \ \ paule.getLocation\ \=\ (10,\ 4)\r\n
+comment2.params=numberOfSteps
+comment2.target=void\ multiMove(int)
+comment2.text=\r\n\ Paule\ moves\r\n\ \r\n\ Paule\ makes\ a\ certain\ number\ of\ steps.\r\n\ @param\ \ \ \ \ \ \ numberOfSteps,\ number\ of\ steps\ Paule\ should\ do\r\n\ @requires\ \ \ \ frontIsClear()\ for\ each\ of\ Paule's\ steps\r\n\ @requires\ \ \ \ paule.isInitialized()\r\n\ @ensures\ \ \ \ \ Paule\ is\ numberOfSteps\ tiles\ away\ from\ his\ old\ location\r\n
+comment3.params=
+comment3.target=void\ turnRight()
+comment3.text=\r\n\ Paule\ turns\ to\ the\ right\r\n\ \r\n\ @requires\ the\ territory\ exists\r\n\ @requires\ Paule\ is\ initialized\r\n\ @ensures\ if\ Paule\ was\ facing\ north,\ he\ is\ now\ facing\ east\r\n\ @ensures\ if\ Paule\ was\ facing\ east,\ he\ is\ now\ facing\ south\r\n\ @ensures\ if\ Paule\ was\ facing\ south,\ he\ is\ now\ facing\ west\r\n\ @ensures\ if\ Paule\ was\ facing\ west,\ he\ is\ now\ facing\ north\r\n
+comment4.params=
+comment4.target=void\ pauleToStart()
+comment4.text=\r\n\ Paule\ walks\ to\ the\ position\ so\ he\ can\ start\ painting\r\n\ \r\n\ Paule\ moves\ to\ the\ third\ tile\ in\ the\ bottom\ row\r\n
+comment5.params=
+comment5.target=void\ fillTile()
+comment5.text=\r\n\ Paule\ fills\ the\ tile\ with\ 12\ grains\r\n\ \r\n\ Paule\ puts\ 12\ grains\ on\ his\ current\ tile\r\n\ @requires\ \ \ \ paule.getGrainCount()\ >\=\ 12\r\n\ @ensures\ \ \ \ \ \\old\ paule.getGrainCount()\ \=\ paule.getGrainCount\ +\ 12\r\n\ @ensures\ \ \ \ \ there\ are\ 12\ grains\ more\ on\ the\ tile\r\n
+comment6.params=
+comment6.target=void\ paintOne()
+comment6.text=\r\n\ Paule\ paints\ the\ number\ 1\r\n\ \r\n\ He\ starts\ in\ the\ bottom\ row\ in\ the\ middle\ and\ ends\ at\ the\ same\ tile\ facing\ the\ wall\r\n\ @requires\ \ \ \ paule.getGrainCount\ >\=\ 36\r\n\ @requires\ \ \ \ frontIsClear()\ for\ the\ next\ 4\ tiles\r\n\ @ensures\ \ \ \ \ \\old\ paule.getGrainCount()\ \=\ paule.getGrainCount\ +\ 36\r\n\ @ensures\ \ \ \ \ Paule\ painted\ the\ number\ 1\r\n
+comment7.params=
+comment7.target=void\ paintEdge()
+comment7.text=\r\n\ Paule\ paints\ one\ edge\ of\ the\ number\ 0\r\n\ \r\n\ Paule\ starts\ in\ the\ corner\ of\ the\ number\ 0,\ turns\ to\ the\ right\ and\ fills\ the\ two\ tiles\ in\ front\ of\ him\r\n\ @requires\ \ \ \ paule.getGrainCount\ >\=\ 24\r\n\ @requires\ \ \ \ frontIsClear()\ for\ the\ next\ 2\ tiles\r\n\ @ensures\ \ \ \ \ \\old\ paule.getGrainCount()\ \=\ paule.getGrainCount\ +\ 24\r\n\ @ensures\ \ \ \ \ Paule\ painted\ two\ tiles\ \ \ \r\n
+comment8.params=
+comment8.target=void\ paintZero()
+comment8.text=\r\n\ Paule\ paints\ the\ number\ 0\r\n\ \r\n\ He\ starts\ in\ the\ bottom\ row\ in\ the\ middle\ end\ ends\ at\ the\ same\ tile\ facing\ the\ wall\r\n\ \r\n
+comment9.params=
+comment9.target=void\ space()
+comment9.text=\r\n\ Paule\ creates\ space\ between\ the\ digits\r\n\ \r\n\ Paule\ moves\ from\ the\ end\ position\ of\ the\ last\ number\ to\ the\ start\ position\ to\ paint\ the\ next\ number\r\n\ @requires\ \ \ \ frontIsClear()\ for\ each\ step\r\n\ @ensures\ \ \ \ \ \\old\ paule.getLocation().getColumn()\ \=\ paule.getLocation().getColumn()\ -\ 4\r\n
+numComments=15

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Address
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Address\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=streetname\ streetnumber\ postalcode\ cityname
+comment1.target=Address(java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getStreetname()
+comment3.params=streetname
+comment3.target=void\ setStreetname(java.lang.String)
+comment4.params=
+comment4.target=int\ getStreetnumber()
+comment5.params=streetnumber
+comment5.target=void\ setStreetnumber(int)
+comment6.params=
+comment6.target=java.lang.String\ getPostalcode()
+comment7.params=postalcode
+comment7.target=void\ setPostalcode(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getCityname()
+comment9.params=cityname
+comment9.target=void\ setCityname(java.lang.String)
+numComments=10
